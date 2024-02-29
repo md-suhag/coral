@@ -1,0 +1,151 @@
+/* common and reset code  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+ /* header and nav section  */
+.top-header{
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 20px;
+}
+.top-header a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.menu ul li a:hover{
+    color: palevioletred;
+}
+.user a{
+    padding-left:10px ;
+    
+}
+.user a:hover{
+    color: palevioletred;
+}
+
+
+.hidden{
+    display: inline-block;
+}
+.navbar-toggler{
+    font-size: 1.5rem;
+}
+
+
+/* hero section  */
+#hero{
+    position: relative;
+
+}
+.hero-text{
+    line-height: 55px;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+#left-bg{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    z-index: -20;
+}
+#right-bg{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    z-index: -20;
+}
+.hero-btn{
+    text-decoration: none;
+    color: white;
+    background-color: #1e2832;
+    padding: 19px 26px;
+}
+
+
+/* hot category  */
+#hot-category .col-md-6,#hot-category .col-6{
+    margin-bottom: 20px;
+}
+.category-bg-container{
+    position: relative;
+}
+#category-bg{
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ /* product section  */
+
+ .product-heading{
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+ }
+ .sec-nav-link a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    margin-right: 10px;
+ }
+ .active{
+    font-weight: bold;
+ }
+ .sec-nav-btn{
+    border: none;
+    background-color: #1E2832;
+    color: white;
+    padding: 5px 15px;
+ }
+
+
+ #product-section .card{
+    border: none;
+    
+    
+ }
+
+/* responsive part  */
+@media screen and (max-width:992px) {
+    .hidden{
+        display: none;
+    }
+    .menu ul{
+        flex-direction: column;
+       
+    }
+    .menu ul li{
+        padding: 10px;
+    }
+    .menu ul li:hover{
+        background-color: rgba(172, 172, 172, 0.247);
+    }
+    
+   
+    
+    
+}
+
+@media screen and (max-width:576px) {
+
+    #category-bg{
+        display: none;
+    }
+
+}
